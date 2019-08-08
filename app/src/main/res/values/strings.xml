@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ExamCalc</string>
+    <string name="start_button">Start Exam</string>
+    <string name="end_button">End Exam</string>
+    <string name="add_break_button">Add Break</string>
+    <string name="start_time_str">Exam Start Time:</string>
+    <string name="start_hour_str">Hour:</string>
+    <string name="start_minute_str">Minute:</string>
+    <string name="duration_str">Duration of Exam:</string>
+    <string name="duration_hours_str">Hours:</string>
+    <string name="duration_minutes_str">Minutes:</string>
+    <string name="extra_str">Extra Time (If Any):</string>
+    <string name="extra_hours_str">Hours:</string>
+    <string name="extra_minutes_str">Minutes:</string>
+    <string name="breaks_str">Breaks:</string>
+    <string name="end_time_str">Exam End Time:</string>
+    <string name="end_confirmation_title">Are you sure you want to end?</string>
+    <string name="end_confirmation_message">Leaving will wipe the current exam state.</string>
+    <string name="end_negative_button">End Exam</string>
+    <string name="end_positive_button">Stay</string>
+    <string name="add_break_input_title">Number of minutes</string>
+    <string name="add_break_positive_button">Add Break</string>
+    <string name="add_break_negative_button">Cancel</string>
+    <string name="am_pm_am_switch">AM</string>
+    <string name="am_pm_pm_switch">PM</string>
+</resources>

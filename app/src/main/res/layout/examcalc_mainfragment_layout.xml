@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_time_str"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/title_colour"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_hour_str"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/title_colour"
+            android:textAlignment="center"
+            android:paddingRight="5sp"/>
+        <EditText
+            android:id="@+id/start_hour"
+            android:layout_width="37sp"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="number"
+            android:text="12"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_minute_str"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/title_colour"
+            android:textAlignment="center"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"/>
+        <EditText
+            android:id="@+id/start_minute"
+            android:layout_width="37sp"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="number"
+            android:text="00"
+            android:paddingRight="5sp"/>
+        <TextView
+            android:id="@+id/am_pm_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/title_colour"
+            android:textAlignment="center"/>
+        <Switch
+            android:id="@+id/am_pm_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/duration_str"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/title_colour"
+        android:textAlignment="center"
+        android:paddingTop="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duration_hours_str"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/title_colour"
+            android:textAlignment="center"
+            android:paddingRight="15sp"/>
+        <EditText
+            android:id="@+id/duration_hours"
+            android:layout_width="37sp"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="number"
+            android:text="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duration_minutes_str"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/title_colour"
+            android:textAlignment="center"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"/>
+        <EditText
+            android:id="@+id/duration_minutes"
+            android:layout_width="37sp"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="number"
+            android:text="0" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/extra_str"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/title_colour"
+        android:textAlignment="center"
+        android:paddingTop="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extra_hours_str"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/title_colour"
+            android:textAlignment="center"
+            android:paddingRight="15sp"/>
+        <EditText
+            android:id="@+id/extra_hours"
+            android:layout_width="37sp"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="number"
+            android:text="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extra_minutes_str"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/title_colour"
+            android:textAlignment="center"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"/>
+        <EditText
+            android:id="@+id/extra_minutes"
+            android:layout_width="37sp"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="number"
+            android:text="0" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/breaks_str"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/title_colour"
+        android:textAlignment="center"
+        android:paddingTop="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/breaks_view"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/end_time_str"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/title_colour"
+        android:textAlignment="center"
+        android:paddingTop="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0:00 AM"
+        android:textStyle="bold"
+        android:textSize="37sp"
+        android:textColor="@color/title_colour"
+        android:textAlignment="center"
+        android:id="@+id/end_time_textview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/add_break_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_break_button"
+            android:textColor="@color/text_colour"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="15sp">
+        <Button
+            android:id="@+id/end_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_button"
+            android:textColor="@color/text_colour"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
