@@ -4,8 +4,8 @@
  */
 package uk.co.philpotter.examcalc;
 
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import java.io.File;
 
